@@ -12,14 +12,9 @@ int main(void)
 {
 	char low;
 
-        /* print lowercase letters */
-
-             for (ch= ‘a’; ch<= ‘z’; ch++)
-
-                  putchar(ch);
-
-                  putchar (‘\n’) ;
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+		putchar('\n');
 
 	return (0);
 }
-

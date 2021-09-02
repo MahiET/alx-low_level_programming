@@ -2,8 +2,6 @@
 /**
  * print_line - draws a straight line (n) characters long.
  *
- *main - check the code
- *
  * @n: the number of underscores to print.
  * 
  * Return: Always 0.
@@ -17,3 +15,4 @@ void print_line(int n)
 			_putchar('_');
 	_putchar('\n');
 }
+

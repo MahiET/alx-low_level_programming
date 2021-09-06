@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
  *swap_int - switches value of first input with the value of the second input.
  *
  * @a: First value to swap.
@@ -20,5 +18,6 @@ void swap_int(int *a, int *b)
 	*a = *b;
 	*b = temp;
 }
+
 
 

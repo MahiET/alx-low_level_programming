@@ -1,5 +1,4 @@
 /**
- * main - check the code
  * _strncat - concatenates two strings
  * @dest: pointer to the destination string
  * @src: pointer to the source string
@@ -21,3 +20,4 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	return (dest);
 }
+

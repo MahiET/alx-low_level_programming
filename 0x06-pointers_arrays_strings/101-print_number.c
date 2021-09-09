@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * base10 - power in 10 base
  * @n: an exponent
@@ -50,4 +48,5 @@ void print_number(int n)
 		}
 	}
 }
+
 

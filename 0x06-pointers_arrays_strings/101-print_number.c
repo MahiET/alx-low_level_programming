@@ -1,35 +1,53 @@
-/**
- * print_number - prints a number
- * @n: Input number
- * main - check the code
- * Return: Always 0.
- */
+#include "main.h"
 
+/**
+ * base10 - power in 10 base
+ * @n: an exponent
+ * Return: returns 10 to power exponent
+ */
+int base10(int n)
+{
+	int base = 10;
+
+	while (n > 0)
+	{
+		base *= 10;
+		n--;
+	}
+	return (base);
+}
+
+/**
+ * print_number - prints integers enters as parameters using putchar
+ * @n: integer to print
+ * Return: void
+ */
 void print_number(int n)
 {
-	int res, temp, expo;
+	int power;
 
-	expo = 1;
-/*Check negatives*/
-	if (n >= 0)
-		res = n * -1;
+	power = base10(8);
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= -1;
+	}
+
+	if (n == 0)
+		_putchar('0');
+
 	else
 	{
-		res = n;
-		_putchar('-');
-	}
+		while (n / power == 0)
+			power /= 10;
 
-/*Initialize exponent variable*/
-	temp = res;
-	while (temp <= -10)
-	{
-		expo *= 10;
-		temp /= 10;
-	}
-/*Main */
-	while (expo >= 1)
-	{
-		_putchar(((res / expo) % 10) * -1 + '0');
-		expo /= 10;
+		while (power >= 1)
+		{
+			_putchar((n / power) + '0');
+			n %= power;
+			power /= 10;
+		}
 	}
 }
+

@@ -1,7 +1,6 @@
 /**
  * cap_string - capitalizes all words of a string.
  * @s: pointer to input string.
- * main - check the code
  * Return: Always 0.
  */
 char *cap_string(char *s)
@@ -22,3 +21,4 @@ char *cap_string(char *s)
 	
 	return (s);
 }
+

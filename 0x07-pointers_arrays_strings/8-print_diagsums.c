@@ -2,26 +2,22 @@
 #include <stdio.h>
 
 /**
- * *_strstr - locates a substring
- * @haystack: string to search in
- * @needle: substring to look for
- *
- * Return: pointer to the beginning of the located substring
- * or NULL if the substring is not found
+ * print_diagsums - a function that prints the sum of the two diagonals
+ * of a square matrix of integers.
+ * @a: a square matrix of integers
+ * @size: an input integer with the size of matrix
+ * Return: Nothing
  */
-char *_strstr(char *haystack, char *needle)
+void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i = 0, max = size * size, sum1 = 0, sum2 = 0;
 
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		for (j = 0; needle[j] != '\0'; j++)
-		{
-			if (haystack[i + j] != needle[j])
-				break;
-		}
-		if (!needle[j])
-			return (&haystack[i]);
-	}
-	return (NULL);
+	for (; i < max; i += size + 1)
+		sum1 += a[i];
+
+	for (i = size - 1; i < max - 1; i += size - 1)
+		sum2 += a[i];
+
+	printf("%d, %d\n", sum1, sum2);
 }
+

@@ -11,7 +11,7 @@
  * length of word if pos > 0,
  * position of word if pos > 0 && firstchar > 0
  * Return: Apointer to concatened strings or NULL if it str is NULL
- *
+ */
 int wordcounter(char *str, int pos, char firstchar)
 {
 	int i, wordcount, charcount, flag;
@@ -36,7 +36,7 @@ int wordcounter(char *str, int pos, char firstchar)
 			flag = 0;
 	}
 	return (wordcount);
-}*/
+}
 /**
  * strtow - convert a string into a 2d array of words
  * @str: string to convert
@@ -84,6 +84,7 @@ char **strtow(char *str)
 	p[i] = NULL;
 	return (p);
 }
+
 
 
 

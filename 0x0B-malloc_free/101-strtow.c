@@ -8,9 +8,9 @@
  * @firstchar: position of the first letter of the word
  * if pos = 0, count the number of chars in the word
  * else count number of words
- * Return: wordcount if pos == 0,
  * length of word if pos > 0,
  * position of word if pos > 0 && firstchar > 0
+ * Return: Apointer to concatened strings or NULL if it str is NULL
  */
 int wordcounter(char *str, int pos, char firstchar)
 {
@@ -84,5 +84,6 @@ char **strtow(char *str)
 	p[i] = NULL;
 	return (p);
 }
+
 
 

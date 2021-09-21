@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
- * *_memset - fills memory with a constant byte
- * @s: memory area to be filled
- * @b: char to copy
- * @n: number of times to copy b
+ * _memset - Function that fills memory with a constant byte.
+ * @s: Pointer to the memory area
+ * @b: Value to replace
+ * @n: Number of bytes
  *
- * Return: pointer to the memory area s
+ * Return: Pointer to the string modified.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -14,8 +13,11 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
+		*(s + i) = b;
+		if (*(s + i) == '\0')
+			break;
 	}
 
 	return (s);
 }
+

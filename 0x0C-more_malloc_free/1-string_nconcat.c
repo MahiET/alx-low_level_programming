@@ -9,8 +9,7 @@
  * Return: Apointer to concatened strings or NULL if it str is NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
-	char *new_str;
+{char *new_str;
 	unsigned int i = 0, lens1 = 0, lens2 = 0;
 
 	if (s1 == NULL)
@@ -38,10 +37,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			new_str[i] = *s1, s1++;
 		else
 			new_str[i] = *s2, s2++;
-	}
-	new_str[i] = '\0';
-	return (new_str);
-}
+	}new_str[i] = '\0';
+	return (new_str);}
+
 
 
 

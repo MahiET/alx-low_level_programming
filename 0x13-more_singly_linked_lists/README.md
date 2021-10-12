@@ -1,21 +1,32 @@
 0x13. C - More singly linked lists
 
-Why Linked List? 
+Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List.
 
-Arrays can be used to store linear data of similar types, but arrays have the following limitations. 
+Link − Each link of a linked list can store a data called an element.
 
-1) The size of the arrays is fixed: So we must know the upper limit on the numb
+Next − Each link of a linked list contains a link to the next link called Next.
 
-er of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage. 
+LinkedList − A Linked List contains the connection link to the first link called First.
 
-2) Inserting a new element in an array of elements is expensive because the roo
+Types of Linked List
 
-m has to be created for the new elements and to create room existing elements have to be shifted. 
+Simple Linked List − Item navigation is forward only.
 
-For example, in a system, if we maintain a sorted list of IDs in an array id[]. 
-id[] = [1000, 1010, 1050, 2000, 2040]. 
+Doubly Linked List − Items can be navigated forward and backward.
 
-And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000). 
+Circular Linked List − Last item contains link of the first element as next and
+the first element has a link to the last element as previous.
 
-Deletion is also expensive with arrays until unless some special techniques areused.
-For example, to delete 1010 in id[], everything after 1010 has to be moved.
+Basic Operations
+
+Following are the basic operations supported by a list.
+
+Insertion − Adds an element at the beginning of the list.
+
+Deletion − Deletes an element at the beginning of the list.
+
+Display − Displays the complete list.
+
+Search − Searches an element using the given key.
+
+Delete − Deletes an element using the given key.

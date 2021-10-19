@@ -14,3 +14,4 @@ int append_text_to_file(const char *filename, char *text_content);
 unsigned int lit_to_big_endian(unsigned int x);
 
 #endif /* HOLBERTON_H */
+

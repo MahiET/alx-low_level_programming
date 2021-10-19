@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - copies the content of a file to another file
@@ -39,3 +39,4 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd2), exit(100);
 	return (0);
 }
+

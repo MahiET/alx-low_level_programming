@@ -7,13 +7,13 @@
  *
  * Return: Always EXIT_SUCCESS.
  */
-
-size_t dlistint_len(const dlistint_t *h);
+size_t dlistint_len(const dlistint_t *h)
 {
-	size_t x;
+	size_t a;
 
-	for (x = 0; h != NULL; x++)
+	for (a = 0; h != NULL; a++)
 		h = h->next;
 
-	return (x);
+	return (a);
 }
+

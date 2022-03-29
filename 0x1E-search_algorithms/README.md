@@ -24,17 +24,17 @@ Sometime<h3> Auxiliary Space</h3> is confused with Space Complexity. But Auxilia
 
 For calculating the space complexity, we need to know the value of memory used by different type of datatype variables, which generally varies for different operating systems, but the method for calculating the space complexity remains the same.
 
-|------------------------------------------------------------------------|
+
 |             Type                                      |      Size      |
 |-------------------------------------------------------+----------------|
 |bool, char, unsigned char, signed char, __int8	        |      1 byte    |
-|-------------------------------------------------------+----------------|
+
 |__int16, short, unsigned short, wchar_t, __wchar_t	|      2 bytes   |
-|-------------------------------------------------------+----------------|
+
 |float, __int32, int, unsigned int, long, unsigned long	|      4 bytes   |
-|-------------------------------------------------------+----------------|
+
 |double, __int64, long double, long long	        |      8 bytes   |
-|------------------------------------------------------------------------|
+
 
 For Example
 
